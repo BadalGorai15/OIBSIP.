@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    
+<body>
+  <img src="themo.jpg" alt="Paris" class="center" style="width: 80px;;">
+  <style>
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    </style>
+    <style>
+      p {
+        background-image: url("istockphoto-1323823418-612x612.jpg");
+      }
+      </style>
+    
+    
+    <div class="container">
+        <div class="row">
+          <div class="col-md-6 offset-md-3">
+            <h1 class="text-center mb-3"><span class="temp" ><i class="fas fa-temperature-low"></i> </span>Temperature Converter</h1>
+            <div class="container" id="inner">
+              <button id="Celsiusbtn" type="button" class="btn btn-outline-secondary btn-md" id="jQueryColorChange">Celsius</button>
+              <button id="Fahrenheitbtn" type="button" class="btn btn-outline-secondary btn-md" id="jQueryColorChange">Fahrenheit</button>
+              <button id="Kelvinbtn" type="button" class="btn btn-outline-secondary btn-md" id="jQueryColorChange">Kelvin</button>
+            </div>
+            <form>
+              <div class="form-group">
+                <input id="mainInput" type="number" class="form-control form-control-lg" placeholder="Choose your scale">
+              </div>
+            </form> 
+          </div>
+        </div>
+        <div class="row justify-content-md-center">
+          <div id="firstOutput" class="col col-lg-3">
+            <div class="card border-secondary mb-3">
+              <div class="card-body text-secondary">
+                <h4>: <span id="outPut1"></span></h4>
+              </div>
+            </div>
+          </div>
+          <div id="secondOutput" class="col col-lg-3">
+            <div class="card border-secondary mb-3">
+              <div class="card-body text-secondary">
+                <h4>: <span id="outPut2"></span></h4>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
